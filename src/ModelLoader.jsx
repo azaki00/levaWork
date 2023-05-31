@@ -9,6 +9,7 @@ import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 import CameraModule from './CameraModule'
 
 
+
 //Load Map
 const Map = forwardRef((props, ref) => {
   const fbx = useLoader(FBXLoader, '/map.fbx');
@@ -82,6 +83,8 @@ const Shield3 = forwardRef((props, ref) => {
 });
 
 const ModelLoader = () => {
+  const [hovered, setHovered] = useState(false)
+
   // const { camera } = useThree(); // Access the camera directly from useThree hook
   // const buildingsRef = useRef();
   // const mapRef = useRef();

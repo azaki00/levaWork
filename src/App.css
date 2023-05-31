@@ -3,3 +3,12 @@ canvas{
   width: 100vw !important;
   background: black;
 }
+
+.content{
+  background-color: whitesmoke;
+  padding: 20px;
+  font-size: 10rem;
+  border-radius: 8%;
+  color: #151515;
+  transform: translate(-50%,-100%);
+}

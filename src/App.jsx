@@ -15,7 +15,7 @@ function App() {
       <Sky />
       <Stars />
       <ambientLight intensity={1} />
-      <pointLight position={[0, 1000, 0]} intensity={2} color={0xffffff} />
+      <pointLight position={[-200, 100, 0]} intensity={2} color={0xffffff} />
         <ModelLoader />
     </Canvas>
   );
