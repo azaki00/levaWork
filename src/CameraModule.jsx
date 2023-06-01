@@ -57,34 +57,23 @@ const CameraModule = () => {
     <mesh position={[23,0.3,36]} ref={myMesh} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
       <boxGeometry args={[0.2,0.2,0.2]}/>
       <meshStandardMaterial attach='material' color={hovered ? 'blue' : 'green'}/>
-      <Html distanceFactor={10}>
+      {/* <Html distanceFactor={10}>
         <div class="content">
           hello <br />
           world
         </div>
-      </Html>
+      </Html> */}
     </mesh>
     {/* target_2 */}
     <mesh position={[-5,0.3,14]} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
       <boxGeometry args={[0.2,0.2,0.2]}/>
       <meshStandardMaterial attach='material' color={hovered ? 'blue' : 'green'}/>
-      <Html distanceFactor={10}>
-        <div class="content">
-          hello <br />
-          world
-        </div>
-      </Html>
+
     </mesh>
     {/* target_3 */}
     <mesh position={[-2.8,0.5,0.5]} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
       <boxGeometry args={[0.2,0.2,0.2]}/>
       <meshStandardMaterial attach='material' color={hovered ? 'blue' : 'green'}/>
-      <Html distanceFactor={5}>
-        <div class="content">
-          hello <br />
-          world
-        </div>
-      </Html>
     </mesh>
         {/* target_4 */}
         <mesh position={[0,0,10]}>
