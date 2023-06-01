@@ -13,3 +13,5 @@ https://threejs.org/
 
 react-three-fiber, Drei By Pmndrs
 https://docs.pmnd.rs/
+
+https://drei.pmnd.rs/?path=/docs Drei documentation
