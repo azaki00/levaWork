@@ -12,9 +12,9 @@ const Buildings = forwardRef((props, ref) => {
       fbx.scale.set(0.02, 0.02, 0.02);
       fbx.traverse((child) => {
         if (child.isMesh) {
-          child.material.side = THREE.DoubleSide;
-          // const wireframeMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
-          // child.material = wireframeMaterial;
+          // child.material.side = THREE.DoubleSide;
+          const wireframeMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000, wireframe: true });
+          child.material = wireframeMaterial;
         }
       });
     }

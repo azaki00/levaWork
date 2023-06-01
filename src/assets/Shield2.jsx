@@ -21,7 +21,7 @@ const Shield2 = forwardRef((props, ref) => {
   
     return(
         <group ref={shield2Ref}>
-         <primitive ref={ref} object={fbx} />
+         <primitive ref={ref} object={fbx} onClick={() => props.setView(2)}/>
          </group>
     );
   });
